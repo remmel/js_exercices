@@ -7,12 +7,12 @@ GridView = Backbone.View.extend({
         },
         initialize: function(){
             this.collection = new ColorCollection();
-            this.collection.on('add', this.updateColors, this);
+            this.collection.on('add', this.updateColor, this);
         },
         loadColors: function(){
             this.collection.fetch();
         },
-        updateColors: function(color){
+        updateColor: function(color){
             var id = "#position-"+color.attributes.position;
             this.$el.find(id).css("background-color",color.attributes.hex);
         }

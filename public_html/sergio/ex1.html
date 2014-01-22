@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Ex1</title>
+        <meta charset="UTF-8">
+        <style>
+            td{
+                width: 50px;
+                height: 50px;
+                border-width:1px; 
+                border-style:solid; 
+                border-color:black;
+            }
+            table{
+                border-spacing:0px;
+            }
+        </style>
+    </head>
+    <script>
+        function changeColor(id, color) {
+            var el = document.getElementById(id);
+            if (el.style.backgroundColor === color) {
+             el.style.backgroundColor = 'white';
+            } else {
+             el.style.backgroundColor = color;   
+            }
+        }
+    </script>
+    <body>
+        Mettre en place une grille de 3x3 cases. Lorsque l'on clique sur une des cases de la grille la couleur de celle-ci change.
+        <p>Done in 4 minutes!!!!</p>
+        <div>
+            <table>
+                <tr>
+                    <td id="oneXone" onclick="changeColor('oneXone', 'blue')"></td>
+                    <td id="oneXtwo" onclick="changeColor('oneXtwo', 'red')"></td>
+                    <td id="oneXthree" onclick="changeColor('oneXthree', 'yellow')"></td>
+                </tr>
+                 <tr>
+                    <td id="twoXone" onclick="changeColor('twoXone', 'purple')"></td>
+                    <td id="twoXtwo" onclick="changeColor('twoXtwo', 'green')"></td>
+                    <td id="twoXthree" onclick="changeColor('twoXthree', 'orange')"></td>
+                </tr>
+                 <tr>
+                    <td id="threeXone" onclick="changeColor('threeXone', 'gray')"></td>
+                    <td id="threeXtwo" onclick="changeColor('threeXtwo', 'black')"></td>
+                    <td id="threeXthree" onclick="changeColor('threeXthree', 'pink')"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
