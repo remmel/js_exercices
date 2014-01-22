@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <style>
+            td{
+                width: 50px;
+                height: 50px;
+                border-width:1px; 
+                border-style:solid; 
+                border-color:black;
+            }
+            table{
+                border-spacing:0px;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            function generateColor(){
+                return Math.floor(Math.random()*256);
+            }
+            
+            $( document ).ready(function(){
+               $("td").click(function(){
+                   var r = generateColor();
+                   var g = generateColor();
+                   var b = generateColor();
+                   
+                   $(this).css("background-color","rgb("+r+","+g+","+b+")");
+               });
+            });
+        </script>
+    </head>
+    <body>
+        Mettre en place une grille de 3x3 cases. Lorsque l'on clique sur une des cases de la grille la couleur de celle-ci change
+        <div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

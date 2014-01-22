@@ -1,0 +1,12 @@
+[
+    {"hex": "#FF0000", "position": 1},
+    {"hex": "#000000", "position": 2},
+    {"hex": "#00FF00", "position": 3},
+    {"hex": "#0000FF", "position": 4},
+    {"hex": "#FFFF00", "position": 5},
+    {"hex": "#00FFFF", "position": 6},
+    {"hex": "#FF00FF", "position": 7},
+    {"hex": "#C0C0C0", "position": 8},
+    {"hex": "#FFFFFF", "position": 9}
+]
+
