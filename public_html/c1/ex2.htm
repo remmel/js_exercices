@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Ex 2</title>
+        <meta charset="UTF-8">
+        <style>
+            td{
+                width: 50px;
+                height: 50px;
+                border-width:1px; 
+                border-style:solid; 
+                border-color:black;
+            }
+            table{
+                border-spacing:0px;
+            }
+        </style>
+        <script>
+            var App = {
+                api : {
+                    colors : "api/colors.json"
+                }
+            };
+        </script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone.js"></script>
+        <script src="js/Models/Color.js"></script>
+        <script src="js/Collections/Colors.js"></script>
+        <script src="js/Views/DisplayColors.js"></script>
+        <script src="js/ex2.js"></script>
+        
+    </head>
+    <body>
+        Utiliser le service <a href="../api/colors.json">../api/colors.json</a> qui permet de charger le background des cases de la grille.<br />
+        BackboneJS doit être utilisé. Faire un code propre. 46->30 = 45min
+        <div class="grid">
+            <table>
+                <tr>
+                    <td id="position-1"></td>
+                    <td id="position-2"></td>
+                    <td id="position-3"></td>
+                </tr>
+                 <tr>
+                    <td id="position-4"></td>
+                    <td id="position-5"></td>
+                    <td id="position-6"></td>
+                </tr>
+                 <tr>
+                    <td id="position-7"></td>
+                    <td id="position-8"></td>
+                    <td id="position-9"></td>
+                </tr>
+            </table>
+            <input type="button" value="load"/>
+        </div>
+    </body>
+</html>
