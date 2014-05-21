@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Ex 2</title>
+        <meta charset="UTF-8">
+        <style>
+            td{
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+            }
+            table{
+                border-spacing:0px;
+            }
+        </style>
+        <script>
+            var App = {
+                api : {
+                    colors : "api/colors.json"
+                }
+            };
+        </script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone.js"></script>
+    </head>
+    <body>
+        Utiliser le service <a href="../api/colors.json">../api/colors.json</a> afin de charger le background des cases de la grille lors d'un click sur le bouton "load".<br />
+        BackboneJS ou Angular doit être utilisé. Faire un code propre.
+        16h53->17h30 >37min pas terminé
+        <div class="grid" id="app">
+            <table>
+                <tr>
+                    <td id="position-1"></td>
+                    <td id="position-2"></td>
+                    <td id="position-3"></td>
+                </tr>
+                 <tr>
+                    <td id="position-4"></td>
+                    <td id="position-5"></td>
+                    <td id="position-6"></td>
+                </tr>
+                 <tr>
+                    <td id="position-7"></td>
+                    <td id="position-8"></td>
+                    <td id="position-9"></td>
+                </tr>
+            </table>
+            <input type="button" value="load"/>
+        </div>
+        <script src="js/ex2.js"></script>
+    </body>
+</html>
